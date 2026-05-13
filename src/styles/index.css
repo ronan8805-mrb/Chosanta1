@@ -148,7 +148,24 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
 
 /* Responsive */
 @media (max-width: 1200px) { .dashboard-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 768px) { .dashboard-grid { grid-template-columns: 1fr; } .form-grid { grid-template-columns: 1fr; } .sidebar { width: 60px; } .main-content { margin-left: 60px; } }
+@media (max-width: 768px) { 
+  .dashboard-grid { grid-template-columns: 1fr; } 
+  .form-grid { grid-template-columns: 1fr; } 
+  .sidebar { width: 64px; overflow-x: hidden; } 
+  .sidebar-logo div:nth-child(2) { display: none; }
+  .sidebar-section { display: none; }
+  .sidebar-link { font-size: 0; padding: 12px 0; justify-content: center; }
+  .sidebar-link span.icon { margin: 0; width: auto; font-size: 20px; }
+  .sidebar-user-info { display: none; }
+  .sidebar-user { justify-content: center; padding: 14px 0; flex-direction: column; gap: 16px; }
+  .main-content { margin-left: 64px; max-width: calc(100vw - 64px); overflow-x: hidden; } 
+  .topbar { padding: 0 16px; gap: 12px; }
+  .topbar-search { max-width: none; }
+  .topbar-right span { display: none; }
+  .page-content { padding: 16px; }
+  .card-body, .page-content { overflow-x: auto; }
+  .data-table { min-width: 600px; }
+}
 
 /* ══════════════════════════════════════════════════════════════════════
    PRINT / EXPORT TOOLBAR
