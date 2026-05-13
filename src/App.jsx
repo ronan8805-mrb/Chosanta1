@@ -57,7 +57,8 @@ export const AuthContext = createContext(null);
 export const useAuth = () => useContext(AuthContext);
 
 const api = async (url, opts = {}) => {
-  const res = await fetch(url, { ...opts, credentials: 'include', headers: { 'Content-Type': 'application/json', ...opts.headers } });
+  const baseURL = import.meta.env.VITE_API_URL || '';
+  const res = await fetch(baseURL + url, { ...opts, credentials: 'include', headers: { 'Content-Type': 'application/json', ...opts.headers } });
   if (res.status === 401) throw new Error('AUTH');
   const data = await res.json();
   if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);

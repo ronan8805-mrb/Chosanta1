@@ -117,7 +117,8 @@ export default function Layout({ children }) {
   const { user, setUser } = useAuth();
 
   const handleLogout = async () => {
-    await fetch('/api/auth/logout', { method: 'POST', credentials: 'include' });
+    const baseURL = import.meta.env.VITE_API_URL || '';
+    await fetch(baseURL + '/api/auth/logout', { method: 'POST', credentials: 'include' });
     setUser(null);
   };
 

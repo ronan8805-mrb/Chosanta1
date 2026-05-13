@@ -22,7 +22,17 @@ import policyVersionRoutes from './routes/policyversions.js';
 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
+const allowedOrigins = ['http://localhost:5173', 'https://chosanta1.vercel.app'];
+app.use(cors({ 
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin) || origin.endsWith('.vercel.app')) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }, 
+  credentials: true 
+}));
 
 // C4 FIX: Session secret from environment or cryptographically random fallback
 const SESSION_SECRET = process.env.SESSION_SECRET || crypto.randomBytes(48).toString('hex');
@@ -151,4 +161,5 @@ app.get('/api/alerts', requireAuth, (req, res) => {
   res.json(alerts);
 });
 
-app.listen(3001, () => console.log('✅ Chosanta CMS API running on http://localhost:3001'));
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => console.log(\`✅ Chosanta CMS API running on port \${PORT}\`));
