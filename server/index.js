@@ -39,10 +39,17 @@ const SESSION_SECRET = process.env.SESSION_SECRET || crypto.randomBytes(48).toSt
 if (!process.env.SESSION_SECRET) {
   console.warn('⚠️  SESSION_SECRET not set in environment — using random secret (sessions will not survive restart)');
 }
+app.set('trust proxy', 1);
+const isProd = process.env.NODE_ENV === 'production';
 app.use(session({
   secret: SESSION_SECRET,
   resave: false, saveUninitialized: false,
-  cookie: { maxAge: 30 * 60 * 1000, httpOnly: true, sameSite: 'lax' }
+  cookie: { 
+    maxAge: 30 * 60 * 1000, 
+    httpOnly: true, 
+    sameSite: isProd ? 'none' : 'lax',
+    secure: isProd
+  }
 }));
 
 // Auth middleware
