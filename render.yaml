@@ -6,11 +6,5 @@ services:
     buildCommand: npm install
     startCommand: npm run server
     envVars:
-      - key: DB_PATH
-        value: /data/chosanta.db
       - key: SESSION_SECRET
         generateValue: true
-    disk:
-      name: chosanta-data
-      mountPath: /data
-      sizeGB: 1
