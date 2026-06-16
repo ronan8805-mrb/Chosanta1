@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { api } from '../App';
 
+const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+
 export default function AuditTrail() {
   const [docs, setDocs] = useState([]);
   const [auditLog, setAuditLog] = useState([]);
@@ -89,7 +91,7 @@ export default function AuditTrail() {
                 {d.notes && <p style={{ fontSize: 10, color: '#7a7568', marginBottom: 12, lineHeight: 1.5 }}>{d.notes}</p>}
                 <div style={{ display: 'flex', gap: 8 }}>
                   {d.file_path && (
-                    <button onClick={() => window.open(`http://localhost:3001/policies/${d.file_path}`, '_blank')} style={{ flex: 1, padding: '8px 14px', borderRadius: 6, border: 'none', cursor: 'pointer', fontSize: 11, fontWeight: 700, background: 'linear-gradient(135deg, #c9a84c, #e0c070)', color: '#0d1b2a' }}>
+                    <button onClick={() => window.open(`${apiBase}/policies/${d.file_path}`, '_blank')} style={{ flex: 1, padding: '8px 14px', borderRadius: 6, border: 'none', cursor: 'pointer', fontSize: 11, fontWeight: 700, background: 'linear-gradient(135deg, #c9a84c, #e0c070)', color: '#0d1b2a' }}>
                       📄 View Policy
                     </button>
                   )}

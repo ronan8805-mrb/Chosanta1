@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { api, useAuth } from '../App';
 
+const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+
 const CATEGORIES = ['Safeguarding','Governance','Emergency Placement','Care Planning','Risk Management','Staff & HR','Training','Medication','Fire & Health Safety','Complaints & Feedback','Children\'s Participation','Incident Management','Inspection Evidence','Policies & Procedures','Templates & Forms'];
 const STATUSES = ['Draft','Active','Needs Review','Archived'];
 
@@ -78,7 +80,7 @@ export default function DocumentLibrary() {
                 <td style={{ color: d.review_date && d.review_date < new Date().toISOString().slice(0,10) ? '#e74c3c' : 'inherit', fontSize: 12 }}>{d.review_date || '—'}</td>
                 <td style={{ fontSize: 11 }}>v{d.version}</td>
                 <td style={{ display: 'flex', gap: 4 }}>
-                  {d.file_path && <button className="btn btn-sm btn-primary" style={{ fontSize: 11, padding: '3px 10px' }} onClick={() => window.open(`http://localhost:3001/policies/${d.file_path}`, '_blank')}>👁 View</button>}
+                  {d.file_path && <button className="btn btn-sm btn-primary" style={{ fontSize: 11, padding: '3px 10px' }} onClick={() => window.open(`${apiBase}/policies/${d.file_path}`, '_blank')}>👁 View</button>}
                   <button className="btn btn-sm btn-ghost" onClick={() => openEdit(d)}>✏️</button>
                 </td>
               </tr>
