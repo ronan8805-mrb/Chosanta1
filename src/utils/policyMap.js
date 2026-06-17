@@ -68,6 +68,19 @@ const policyPdfMap = {
   'tusla-compliance-bundle.html': 'Chosanta_Tusla_Compliance_Bundle.pdf',
   'tusla-submission-pack.html': 'Chosanta_Tusla_Submission_Pack.pdf',
   'visitor-log.html': 'Chosanta_Visitor_Log.pdf',
+  // ═══ NEW POLICIES (June 2026) ═══
+  'whistleblowing-policy.pdf': 'Whistleblowing Policy.pdf',
+  'allegations-against-staff-procedure.pdf': 'Allegations Against Staff Procedure.pdf',
+  'anti-bullying-policy.pdf': 'Anti-Bullying Policy.pdf',
+  'business-continuity-plan.pdf': 'Business Continuity Plan.pdf',
+  'children-first-safeguarding-policy.pdf': 'Children First Safeguarding and Child Protection Policy.pdf',
+  'family-contact-access-policy.pdf': 'Family Contact and Access Policy.pdf',
+  'gdpr-data-protection-policy.pdf': 'GDPR and Data Protection Policy.pdf',
+  'online-safety-policy.pdf': 'Online Safety, Mobile Phone and Internet Use Policy.pdf',
+  'placement-matching-admissions-policy.pdf': 'Placement Matching and Admissions Policy.pdf',
+  'self-harm-suicide-risk-policy.pdf': 'Self-Harm & Suicide Risk Management Policy.pdf',
+  'substance-misuse-policy.pdf': 'Substance Misuse Policy.pdf',
+  'vehicle-transport-risk-policy.pdf': 'Vehicle and Transport Risk Policy.pdf',
 };
 
 /**

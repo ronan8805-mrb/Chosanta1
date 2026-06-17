@@ -787,6 +787,19 @@ if (docCount === 0) {
   D('Maintenance & Repairs Log','Templates & Forms','CM-MRL-001','HIQA Standard 7','Maintenance.','maintenance-repairs-log.html');
   D('Compliments & Feedback Log','Templates & Forms','CM-CPF-001','HIQA Standard 4','Positive feedback.','compliments-feedback-log.html');
   D('Room Search & Contraband Log','Templates & Forms','CM-RSC-001','HIQA Standard 3','Room search.','room-search-contraband-log.html');
+  // ═══ NEW POLICIES (June 2026) ═══
+  D('Whistleblowing Policy','Governance','CM-WBP-001','Protected Disclosures Act 2014','Reporting concerns, protection for disclosers.','whistleblowing-policy.pdf');
+  D('Allegations Against Staff Procedure','Staff & HR','CM-AAS-001','Children First Act 2015 · HIQA Standard 6','Managing allegations, interim measures, investigation.','allegations-against-staff-procedure.pdf');
+  D('Anti-Bullying Policy','Safeguarding','CM-ABP-001','HIQA Standard 2 · UNCRC','Prevention, response, peer-on-peer abuse.','anti-bullying-policy.pdf');
+  D('Business Continuity Plan','Governance','CM-BCP-001','HIQA Standard 5','Emergency planning, service continuity.','business-continuity-plan.pdf');
+  D('Children First Safeguarding & Child Protection Policy','Safeguarding','CM-CF-001','Children First Act 2015','Mandated reporting, DLP, child protection.','children-first-safeguarding-policy.pdf');
+  D('Family Contact & Access Policy','Care Planning','CM-FCA-001','Child Care Act 1991 · HIQA Standard 1','Family visits, supervised access, communication.','family-contact-access-policy.pdf');
+  D('GDPR & Data Protection Policy','Policies & Procedures','CM-GDP-001','GDPR · Data Protection Act 2018','Data processing, retention, subject access requests.','gdpr-data-protection-policy.pdf');
+  D('Online Safety, Mobile Phone & Internet Use Policy','Safeguarding','CM-OSP-001','HIQA Standard 2','Online safety, device management, e-safety.','online-safety-policy.pdf');
+  D('Placement Matching & Admissions Policy','Care Planning','CM-PMA-001','S.I. 259/1995 · HIQA Standard 2','Matching criteria, impact assessments, admission process.','placement-matching-admissions-policy.pdf');
+  D('Self-Harm & Suicide Risk Management Policy','Safeguarding','CM-SHR-001','HIQA Standard 2 · Connecting for Life','Risk assessment, safety planning, postvention.','self-harm-suicide-risk-policy.pdf');
+  D('Substance Misuse Policy','Safeguarding','CM-SMP-001','HIQA Standard 2','Drug/alcohol awareness, response procedures.','substance-misuse-policy.pdf');
+  D('Vehicle & Transport Risk Policy','Fire & Health Safety','CM-VTR-001','Safety, Health & Welfare at Work Act 2005','Vehicle checks, transport risk, insurance.','vehicle-transport-risk-policy.pdf');
 }
 
 // Seed demo children
