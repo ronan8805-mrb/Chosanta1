@@ -81,6 +81,12 @@ const policyPdfMap = {
   'self-harm-suicide-risk-policy.pdf': 'Self-Harm & Suicide Risk Management Policy.pdf',
   'substance-misuse-policy.pdf': 'Substance Misuse Policy.pdf',
   'vehicle-transport-risk-policy.pdf': 'Vehicle and Transport Risk Policy.pdf',
+  // ═══ NEW POLICIES (July 2026) ═══
+  'food-safety-haccp-records-policy.pdf': 'Food Safety  HACCP Records Policy.pdf',
+  'exit-transition-planning-procedure.pdf': 'Exit & Transition Planning Procedure.pdf',
+  'individual-placement-plan-procedure.pdf': 'Individual Placement Plan Procedure.pdf',
+  'young-person-welcome-pack-orientation.pdf': 'Young Person Welcome Pack & Orientation Policy.pdf',
+  'designated-liaison-person-dlp.pdf': 'Designated Liaison Person (DLP) Role & Responsibilities.pdf',
 };
 
 /**

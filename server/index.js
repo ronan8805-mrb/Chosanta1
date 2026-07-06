@@ -81,7 +81,7 @@ export function getClientIp(req) {
 }
 
 // Serve COSANTA HTML policy documents
-app.use('/policies', express.static(join(__dirname, '..', '..')));
+app.use('/policies', express.static(join(__dirname, '..', 'public', 'policies')));
 
 app.use('/api/auth', authRoutes);
 app.use('/api/dashboard', requireAuth, dashboardRoutes);

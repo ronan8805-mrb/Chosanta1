@@ -800,6 +800,12 @@ if (docCount === 0) {
   D('Self-Harm & Suicide Risk Management Policy','Safeguarding','CM-SHR-001','HIQA Standard 2 · Connecting for Life','Risk assessment, safety planning, postvention.','self-harm-suicide-risk-policy.pdf');
   D('Substance Misuse Policy','Safeguarding','CM-SMP-001','HIQA Standard 2','Drug/alcohol awareness, response procedures.','substance-misuse-policy.pdf');
   D('Vehicle & Transport Risk Policy','Fire & Health Safety','CM-VTR-001','Safety, Health & Welfare at Work Act 2005','Vehicle checks, transport risk, insurance.','vehicle-transport-risk-policy.pdf');
+  // ═══ NEW POLICIES (July 2026) ═══
+  D('Food Safety & HACCP Records Policy','Fire & Health Safety','CM-FSH-001','HIQA Standard 6 · FSAI Regulations','Food safety procedures, HACCP record keeping, kitchen hygiene.','food-safety-haccp-records-policy.pdf');
+  D('Exit & Transition Planning Procedure','Care Planning','CM-ETP-001','HIQA Standard 4 · Child Care Act 1991','Discharge planning, aftercare, transition support.','exit-transition-planning-procedure.pdf');
+  D('Individual Placement Plan Procedure','Care Planning','CM-IPP-001','HIQA Standard 3 · S.I. 259/1995','Individual placement planning, objectives, review.','individual-placement-plan-procedure.pdf');
+  D('Young Person Welcome Pack & Orientation Policy','Care Planning','CM-YPW-001','HIQA Standard 1 · UNCRC','Welcome pack, orientation process, settling in.','young-person-welcome-pack-orientation.pdf');
+  D('Designated Liaison Person (DLP) Role & Responsibilities','Safeguarding','CM-DLP-001','Children First Act 2015 · HIQA Standard 2','DLP appointment, duties, mandated reporting.','designated-liaison-person-dlp.pdf');
 }
 
 // Seed demo children
