@@ -87,6 +87,7 @@ const policyPdfMap = {
   'individual-placement-plan-procedure.pdf': 'Individual Placement Plan Procedure.pdf',
   'young-person-welcome-pack-orientation.pdf': 'Young Person Welcome Pack & Orientation Policy.pdf',
   'designated-liaison-person-dlp.pdf': 'Designated Liaison Person (DLP) Role & Responsibilities.pdf',
+  'fair-street-policy-suite.pdf': 'Fair Street Policy Suite.pdf',
 };
 
 /**

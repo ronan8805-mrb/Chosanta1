@@ -806,6 +806,7 @@ if (docCount === 0) {
   D('Individual Placement Plan Procedure','Care Planning','CM-IPP-001','HIQA Standard 3 · S.I. 259/1995','Individual placement planning, objectives, review.','individual-placement-plan-procedure.pdf');
   D('Young Person Welcome Pack & Orientation Policy','Care Planning','CM-YPW-001','HIQA Standard 1 · UNCRC','Welcome pack, orientation process, settling in.','young-person-welcome-pack-orientation.pdf');
   D('Designated Liaison Person (DLP) Role & Responsibilities','Safeguarding','CM-DLP-001','Children First Act 2015 · HIQA Standard 2','DLP appointment, duties, mandated reporting.','designated-liaison-person-dlp.pdf');
+  D('Fair Street Policy Suite','Policies & Procedures','CM-FSP-002','HIQA Standards','Comprehensive policy suite for Fair Street.','fair-street-policy-suite.pdf');
 }
 
 // Seed demo children
