@@ -721,8 +721,6 @@ if (docCount === 0) {
   D('Governance Structure & Organisational Chart','Governance','CM-GSO-001','HIQA Standard 5','Org chart.','governance-structure-orgchart.html');
   D('Management Structure','Governance','CM-MGT-001','HIQA Standard 5','Roles and responsibilities.','management-structure.html');
   D('Statement of Purpose','Governance','CM-SOP-001','S.I. 674/2017 Article 3','Centre aims, objectives.','hiqa-statement-of-purpose.html');
-  D('Statement of Purpose (Silverwings)','Governance','CM-SOP-002','S.I. 674/2017 Article 3','Silverwings Centre.','silverwings-statement-of-purpose.html');
-  D('Silverwings Policy Suite','Governance','CM-SPS-001','HIQA Standards 2018','Complete policy suite.','silverwings-policy-suite.html');
   D('Tusla Compliance Policy Bundle','Governance','CM-TCB-001','Tusla Registration','Compliance bundle.','tusla-compliance-bundle.html');
   D('Tusla Policy Submission Pack','Governance','CM-TSP-001','Tusla Registration','Registration documents.','tusla-submission-pack.html');
   D('Governance & Compliance Meeting Minutes','Governance','CM-GMM-001','HIQA Standard 5','Meeting minutes template.','governance-meeting-minutes.html');

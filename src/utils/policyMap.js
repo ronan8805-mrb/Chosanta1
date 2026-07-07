@@ -56,8 +56,6 @@ const policyPdfMap = {
   'safeguarding-vulnerable-adults.html': 'Chosanta_Safeguarding_Vulnerable_Adults.pdf',
   'sanctions-consequences-log.html': 'Chosanta_Sanctions_Consequences_Log (2).pdf',
   'service-user-rights-advocacy.html': 'Chosanta_Service_User_Rights_Advocacy.pdf',
-  'silverwings-policy-suite.html': 'Chosanta_Silverwings_Policy_Suite.pdf',
-  'silverwings-statement-of-purpose.html': 'Chosanta_Silverwings_Policy_Suite.pdf',
   'social-recreational-community.html': 'Chosanta_Social_Recreational_Community.pdf',
   'staff-attendance-sick-leave-log.html': 'Chosanta_Staff_Attendance_Sick_Leave.pdf',
   'staff-recruitment-vetting-induction.html': 'Chosanta_Staff_Recruitment_Vetting_Induction.pdf',
