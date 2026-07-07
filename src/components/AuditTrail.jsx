@@ -18,11 +18,13 @@ export default function AuditTrail() {
   useEffect(load, []);
 
   const categories = ['All', ...new Set(docs.map(d => d.category))].sort((a, b) => a === 'All' ? -1 : a.localeCompare(b));
-  const filtered = docs.filter(d => {
-    if (filter !== 'All' && d.category !== filter) return false;
-    if (search && !d.title.toLowerCase().includes(search.toLowerCase()) && !(d.ref_code || '').toLowerCase().includes(search.toLowerCase())) return false;
-    return true;
-  });
+  const filtered = docs
+    .filter(d => {
+      if (filter !== 'All' && d.category !== filter) return false;
+      if (search && !d.title.toLowerCase().includes(search.toLowerCase()) && !(d.ref_code || '').toLowerCase().includes(search.toLowerCase())) return false;
+      return true;
+    })
+    .sort((a, b) => a.title.localeCompare(b.title));
 
   const openEdit = (d) => { setForm({ ...d }); setEditDoc(d); };
   const saveEdit = async () => {

@@ -33,7 +33,9 @@ export default function DocumentLibrary() {
   };
   const F = (k, v) => setForm(p => ({ ...p, [k]: v }));
 
-  const filtered = docs.filter(d => !search || d.title.toLowerCase().includes(search.toLowerCase()) || (d.ref_code||'').toLowerCase().includes(search.toLowerCase()));
+  const filtered = docs
+    .filter(d => !search || d.title.toLowerCase().includes(search.toLowerCase()) || (d.ref_code||'').toLowerCase().includes(search.toLowerCase()))
+    .sort((a, b) => a.title.localeCompare(b.title));
 
   // Group by category for summary
   const catCounts = {};

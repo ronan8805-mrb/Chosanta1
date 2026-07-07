@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
   const p = [];
   if (category) { sql += ' AND d.category=?'; p.push(category); }
   if (status) { sql += ' AND d.status=?'; p.push(status); }
-  sql += ' ORDER BY d.category, d.title';
+  sql += ' ORDER BY d.title';
   res.json(db.prepare(sql).all(...p));
 });
 
